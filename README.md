@@ -38,3 +38,4 @@ and i will set limit as10
 and page=2
 const skip=(page-1)*limit
 const last=skip+limmit;
+and for further details we can check Practising Data repo 
