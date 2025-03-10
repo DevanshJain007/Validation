@@ -21,3 +21,20 @@ const [active, setActive] = useState(false);
               type="text"
               name="name"
               onChange={handleChange}
+and for pagination firstly we took the data from api we can do my ttwo methods oneis fetch tool and another is axios here fetch we use first we fetch the api then response and convvert that response into json and storing in data vaiable and in axios it is diffrent
+means we use async function and we callit from useEffect and also then we type response =await fetcch(url) and tgen data =await response.json and after that 
+for pagination 
+we use split method and then passed into the component which i have maked 
+There are two ways 1 const lastpage=currpage*postpage;
+const firstpostIndex=lasePostaindex-postPage
+const current page=finalData.slice(firstPostIndex,lastPostIndex)
+and we have created these states setFinalData
+setCurepage=useState(1)
+setPostPage=useState(10)
+
+
+now method 2 that we write this in url ?limit&&page
+and i will set limit as10
+and page=2
+const skip=(page-1)*limit
+const last=skip+limmit;
